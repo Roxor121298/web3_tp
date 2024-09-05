@@ -19,4 +19,3 @@
         return compact("hasError");
         // devient ["hasError" = > true]
     }
-?>

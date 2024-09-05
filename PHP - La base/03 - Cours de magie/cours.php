@@ -11,9 +11,10 @@
             <header>
                 <div class="title">Cours de magie</div>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="cours.html" class="selected">Cours</a></li>
-                    <li><a href="inscription.html">Inscription</a></li>
+                    
+                    <li><a href="index.php" class="<? $pageTitle == 'Acceuil' ? "selected" : "" ?>">Accueil</a></li> 
+                    <li><a href="cours.php" class="<? $pageTitle == 'Acceuil' ? "selected" : "" ?>">Cours</a></li>
+                    <li><a href="inscription.php">Inscription</a></li>
                 </ul>
             </header>
             <div class="container">
@@ -45,12 +46,3 @@
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati, accusantium quos numquam beatae sapiente. Facere amet accusamus id quos dolorum inventore esse excepturi autem ut ullam! Perferendis, libero laborum.
                         </p>
-                    </div>
-                </div>
-            </div>
-            <footer>
-                33 visites depuis sa création!
-            </footer>
-        </main>
-    </body>
-    </html>

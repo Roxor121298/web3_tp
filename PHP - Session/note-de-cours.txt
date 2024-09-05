@@ -1,0 +1,7 @@
+dans c elab on vois les cookies
+
+    L'attribut le plus important est l'identifiant permettant d'identifier des utilisateurs ce connectant plusieurs fois
+    Ce faire voler un cookie est un stratégie courrante pour hacker un site puisque ca valeur correspond a un id unique d'identification
+    
+    
+    Comment les cookies fonctionne ?? : 

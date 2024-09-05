@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Accueil | Cours de magie</title>
-        <link rel="stylesheet" href="css/global.css">
-    </head>
-    <body>
-        <main>
-            <header>
-                <div class="title">Cours de magie</div>
-                <ul>
-                    <li><a href="index.html" class="selected">Accueil</a></li>
-                    <li><a href="cours.html">Cours</a></li>
-                    <li><a href="inscription.html">Inscription</a></li>
-                </ul>
-            </header>
-            <div class="container">
-                <h1>Accueil</h1>
+<?php
+    require_once("action/index_action.php");
+
+    $data = execute();
+
+    $pageTitle = "index";
+    require_once("partial/header.php");
+
+    ?>
                 <img src="img/theater.jpg" alt="Theater magic">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate nesciunt porro eligendi, fugiat tempore blanditiis excepturi. Qui rerum reprehenderit sequi deserunt, dolorum commodi reiciendis deleniti. Tempore officia reprehenderit fugit?
@@ -31,11 +20,3 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate nesciunt porro eligendi, fugiat tempore blanditiis excepturi. Qui rerum reprehenderit sequi deserunt, dolorum commodi reiciendis deleniti. Tempore officia reprehenderit fugit?
                 </p>
-            </div>
-        </div>
-        <footer>
-            33 visites depuis sa création!
-        </footer>
-    </main>
-</body>
-</html>

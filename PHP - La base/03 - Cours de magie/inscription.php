@@ -1,29 +1,22 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inscription | Cours de magie</title>
-        <link rel="stylesheet" href="css/global.css">
-    </head>
-    <body>
-        <main>
-            <header>
-                <div class="title">Cours de magie</div>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="cours.html">Cours</a></li>
-                    <li><a href="inscription.html" class="selected">Inscription</a></li>
-                </ul>
-            </header>
-            <div class="container">
-                <h1>Inscription</h1>
 
+<?php
+    require_once("action/index_action.php");
+    $data = execute();
+
+    $pageTitle = "Inscription";
+    require_once("partial/header.php");
+
+    ?>
                 <div class="register-section">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati, accusantium quos numquam beatae sapiente. Facere amet accusamus id quos dolorum inventore esse excepturi autem ut ullam! Perferendis, libero laborum.
                     </p>
-                    <form action="" method="post">
+                    <?php
+                        if($showSuccesMessage){
+
+                        }
+                    ?>
+                    <form action="" method="post"  >
                         <div>
                             <input type="text" name="name" placeholder="Nom" required>
                         </div>
@@ -41,11 +34,4 @@
                             <button type="submit">Envoyer</button>
                         </div>
                     </form>
-                </div>
-            </div>
-            <footer>
-                33 visites depuis sa création!
-            </footer>
-        </main>
-    </body>
-</html>
+                
