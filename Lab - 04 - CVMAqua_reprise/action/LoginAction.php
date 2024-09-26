@@ -1,5 +1,6 @@
 <?php
-	require_once("CommonAction.php");
+	require_once("action/CommonAction.php");
+    require_once("action/DAO/UserDAO.php");
 
     class LoginAction extends CommonAction{
 
@@ -8,8 +9,27 @@
         }
 
         protected function executeAction() {
+            $erreur = false;
 
-            return [];
+            if(isset($_POST["password"])){
+                
+                $result = UserDAO::verifyUser($_POST["username"],$_POST["password"] )
+
+                if($result){
+                    var_dump($result);
+                    $_SESSION["username"] = $_POST["username"];
+					$_SESSION["visibility"] = $result["VISIBILITY"];
+
+                    header("location:contact.php");
+                    exit;
+                }
+
+                else{
+                    $erreur = true;
+                }
+            }
+
+            return compact("erreur");
         }
 
     }

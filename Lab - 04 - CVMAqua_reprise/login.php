@@ -1,37 +1,46 @@
 <?php
 	require_once("action/LoginAction.php");
 
-    $action = new LoginAction();
+	$action = new LoginAction();
 	$data = $action->execute();
 
-	$pageTitle = "Login";
-
+	$pageTitle = "Authentification";
 	require_once("partial/header.php");
 ?>
+<div class="login-form-frame">
+	<form action="login.php" method="post">
+		<?php 
+			if ($data["hasConnectionError"]) {
+				?>
+				<div class="error-div"><strong>Erreur : </strong>Connexion erronée</div>
+				<?php
+			}
+		?>
 
-    <form action=login.php method="post">
-
-        <div class="form-username">
-            <label for="username">Nom d'utilisateurs</label>
-        </div>
-        <div class="form-username">
-            <input type="text" name="user" required>
-        </div>
-        <div class="form-password">
-            <label for="password">Mots de passse</label>
-        </div>
-        <div class="form-password">
-            <input type="password" name="pwd" required>
-        </div>
-        <div class="form-input">
-			<button type="submit">Connexion</button>
+		<div class="form-label">
+			<label for="username">Nom d'usager : </label>
 		</div>
+		<div class="form-input">
+			<input type="text" name="username" required />
+		</div>
+		<div class="form-separator"></div>
 
-    </form>
+		<div class="form-label">
+			<label for="password">Mot de passe : </label>
+		</div>
+		<div class="form-input">
+			<input type="password" name="pwd" required />
+		</div>
+		<div class="form-separator"></div>
 
-
-<?php 
-
-require_once("partial/footer.php");
-
-?>
+		<div class="form-label">
+			&nbsp;
+		</div>
+		<div class="form-input">
+			<button type="submit">fgfdgfdgdfgfd</button>
+		</div>
+		<div class="form-separator"></div>
+	</form>
+</div>
+<?php
+	require_once("partial/footer.php");

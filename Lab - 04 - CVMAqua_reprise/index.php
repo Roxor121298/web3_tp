@@ -3,7 +3,7 @@
 
 	$action = new IndexAction();
 	$data = $action->execute();
-	$pageTitle = "Acceuil";
+	$pageTitle = "Acceuil2";
 
 	require_once("partial/header.php");
 ?>
