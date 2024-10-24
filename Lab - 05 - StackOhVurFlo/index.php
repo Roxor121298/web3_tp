@@ -5,6 +5,7 @@
 		<title>Javascript | StackOhVurFlo</title>
 		<link href="css/global.css" rel="stylesheet" />
 		<script src="https://notes-de-cours.com/dev/toggle-lab-info.js"></script>
+		<script src=js/javascript.js></script>
 	</head>
 	<body>
 		<header>
