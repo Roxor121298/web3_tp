@@ -9,12 +9,12 @@
 
         protected function executeAction() {
             
-            $isConnected = true;
+            $isConnected = false;
 
 
-            if(!$isConnected){
+            if($_POST["username"] == "edouard" && $_POST["pwd"] == "1234"){
+                $isConnected = true;
                 header("location:index.php");
-                exit;
             }
 
 

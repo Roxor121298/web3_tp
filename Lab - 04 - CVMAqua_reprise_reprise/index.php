@@ -25,8 +25,10 @@ require_once("partial/header.php");
 		    				<li><a href="images.php">Galerie photos</a></li>
 		    				<li><a href="contact.php">Contactez-nous</a></li>
 							<?php 
-							if(!$data["isConnected"])?><a href="login.php">connexion</a><?php
-							if($data["isConnected"])?><button action=logout></button> <?php
+							if(!$data["isConnected"])?><a href="login.php">connexion</a><br><?php
+
+
+							if($data["isConnected"])?><a action=logout>deconnexion</a> <?php
 							?>
 		    			</ul>
 		    		</div>

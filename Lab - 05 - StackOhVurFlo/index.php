@@ -40,13 +40,13 @@ $answers = $answerDAO->getAnswers();
                 <p>
                     Je ne comprends pas... j'ai tout essayé et mon code JavaScript ne fonctionne simplement pas... j'ai joujours des erreurs...
                 </p>
-<pre>
+<!-- <pre>
 document.getElementById("elem").onclick = test(event);
 
 function test(e) {
     this.style.display = "none";
 }
-</pre>
+</pre> -->
                 <p>
                     Est-ce que quelqu'un pourrait m'aider?
                 </p>

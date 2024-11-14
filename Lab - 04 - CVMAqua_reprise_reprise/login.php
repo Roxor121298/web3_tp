@@ -1,10 +1,12 @@
 <?php
 	require_once("partial/header.php");
 
-    require_once("action/LoginAction.php");
+	require_once("action/LoginAction.php");
 
-    $action = new LoginAction();
-    $data = $action->execute();
+	$action = new LoginAction();
+    $data = $action->execute();s
+
+
 
 ?>
 
@@ -38,3 +40,5 @@
 </div>
 <?php
 	require_once("partial/footer.php");
+
+
