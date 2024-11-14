@@ -1,0 +1,35 @@
+
+
+ - Digital Ocean
+
+	- Choisir droplet
+	- choisir syteme d'exploitation (le configurer ou choisir pré configurer)
+	- choisir le CPU (SSD - premium intel ou premium amd)
+	- choisir si on veut un backup plan 
+	- Choisir si on veut un mots de passe root ou une clé SSH
+	- Add improve matrix (pour voir quand la mémoire est utilisé) (a un moindre cout sur le serveur)
+	- HostName (nom du dropplet)
+	- Ajouter un tags pour mettre des restrictions 
+
+	- Ce connecter au serveur (avec git bash)
+	- ssh root@adresse_ip_du_serveur
+	- validaion (ys/no) et mots de passe
+	- efffacer le index.html par défault (pour ne pas divulger d'information )
+	- touch index.html pour créer c page .html a la place
+	- activé les mises à jour automatique (Commande : apt install unattended-upgrades update-notifier-common et dpkg-reconfigure unattended-upgrades)
+	- configurer les mise a jour automatique (commande : nano /etc/apt/apt.conf.d/50unattended-upgrades)
+	- exemple Unattended -upgrade:: Automatic-Reboot-Time "04:00"; pour mettre les mise a joru a 4h du amtin
+	- reboot pour pouvoir avoir la bonne configuration
+	- ajouter un nouvelle utilisateur pour "remplacer" root(ne pas appelé admin ou ssh admin)
+	- ce connecter au nouvelle utilisateur dans un autre terminal
+	- devenir root avec la commande su
+	- changer la configuration pour empêcher root de ce connecter (commande : sshdconfig  puis dans vim ligne 33 PermitRootLogin No)
+	- redémarrer le systeme (commande : systemctl restart ssh)
+	- valider que on ne peut plus ce connecter 
+	
+
+	- Pour ce connecter et déposer des fichier dans le serveur 
+	- le plus simple est d'utilisé fileZilla
+	- il est mieux aujourdhui de faire des git pull a partir d'un repository ou les fichiers sont situés	
+
+	

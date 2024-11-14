@@ -18,7 +18,7 @@
 					$_SESSION["username"] = $_POST["username"];
 					$_SESSION["visibility"] = $result["VISIBILITY"];
                     
-					header("location:admin-index.php");
+					header("location:admin-index.php"); //
 					exit;
 				}
 				else {
